@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu treino semanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu treino semanal</h1>
+        <p>Monte os exercícios de cada dia da sua semana.</p>
+    </header>
+
+    <main>
+        <section class="topo-lista">
+            <div>
+                <h2>Treinos salvos</h2>
+                <p>Escolha um dia, os grupos musculares e os exercícios.</p>
+            </div>
+            <button id="btnNovo" type="button">+ Montar treino</button>
+        </section>
+        <div id="lista" aria-live="polite"></div>
+    </main>
+
+    <div id="modal" class="oculto" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+        <form id="form">
+            <div class="cabecalho-form">
+                <h2 id="tituloModal">Monte seu treino</h2>
+                <button id="btnFechar" type="button" aria-label="Fechar">×</button>
+            </div>
+
+            <label for="diaSemana">Qual dia da semana é o treino?</label>
+            <select id="diaSemana" required><option value="">Escolha um dia</option></select>
+
+            <section id="selecao" class="selecao oculto">
+                <div>
+                    <label for="quantidade">Quantos exercícios você quer nesse treino?</label>
+                    <input type="number" id="quantidade" min="1" max="30" placeholder="Ex: 6">
+                </div>
+                <div id="camposExercicios" class="campos-exercicios"></div>
+            </section>
+
+            <div class="acoes">
+                <button id="btnCancelar" type="button">Cancelar</button>
+                <button type="submit">OK — Salvar treino</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
