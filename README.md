@@ -17,7 +17,6 @@ Importante: o plano é por **dia da semana**, não por uma semana específica do
 - **Painel com os treinos salvos** — a tela inicial lista um card por dia da semana que já tem treino, em ordem de Segunda a Domingo, cada um com a lista de exercícios.
 - **Exclusão de um dia** — cada card tem um botão "Excluir" (com confirmação) que remove o treino daquele dia inteiro.
 - **Validações no servidor** — o backend rejeita dia da semana inválido, lista de exercícios vazia, mais de 30 exercícios ou nomes muito longos, mesmo que alguém tente burlar o formulário.
-- **Sem login** — é um app de uso local/pessoal, sem cadastro ou autenticação de usuário.
 ## Como funciona (fluxo de uso)
  
 1. Clique em **"+ Montar treino"**.
